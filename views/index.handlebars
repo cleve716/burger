@@ -1,0 +1,44 @@
+<h1 id="eat_da">Eat da Burger!</h1>
+<img id="burgerone" src="/assets/img/eat-da_burger.png" style="width:256px;height:256px;">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Ready to eat?</h2>
+            <img id="burgertwo" src="/assets/img/burger.png" style="width:256px;height:256px;">
+            <ul>
+                {{!-- each id in burgers_db --}}
+                {{#each burgers}}
+                {{#unless devoured}}
+                <div>{{id}}. {{ burger_name }}
+                    <button class="eat-it" data-id="{{id}}">Eat it</button>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Eaten!</h2>
+            <img id="burgerthree" src="/assets/img/eaten.png" style="width:256px;height:256px;">
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <div>{{id}}. {{burger_name}}
+                    {{/if}}
+                    {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Create a Burger</h2>
+            <img id="burgerfour" src="/assets/img/create.png" style="width:256px;height:256px;">
+
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label for="bgr">Burger Name:</label>
+                    <input type="text" id="bgr" name="name"><br>
+                    <button type="submit">Add Your Burger</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

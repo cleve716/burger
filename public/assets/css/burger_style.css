@@ -1,0 +1,27 @@
+#eat_da{
+    font-size: 60px;
+}
+
+#burgerone{
+    padding-top: 10px;  
+}
+
+h1{
+    font-family: 'Fontdiner Swanky', cursive;
+    text-align: center;
+}
+h2{
+    font-family: 'Fontdiner Swanky', cursive;
+
+}
+
+#burgerone{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container{
+    max-width: 1000px;
+}
