@@ -9,7 +9,7 @@
                 {{!-- each id in burgers_db --}}
                 {{#each burgers}}
                 {{#unless devoured}}
-                <div>{{id}}. {{ burger_name }}
+                <div> {{ burger_name }}
                     <button class="eat-it" data-id="{{id}}">Eat it</button>
                 </div>
                 {{/unless}}
@@ -22,7 +22,7 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                <div>{{id}}. {{burger_name}}
+                <div> {{burger_name}}
                     {{/if}}
                     {{/each}}
             </ul>
